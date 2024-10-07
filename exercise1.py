@@ -49,5 +49,6 @@ def test_3d_vector_subtraction() -> None:
     assert True
 
 if __name__ == "__main__":
+    # testing vector index access
     test_vector_index_access()
     print("test_vector_index_access test passed!")
