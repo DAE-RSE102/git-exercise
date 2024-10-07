@@ -46,9 +46,17 @@ def test_3d_vector_addition() -> None:
 
 def test_3d_vector_subtraction() -> None:
     # Task B: add a test for vector subtraction
+    v = Vector([1.0, 2.0, 3.0]) - Vector([1.1, 2.2, 3.3])
+    assert isclose(v[0], -0.1)
+    assert isclose(v[1], -0.2)
+    assert isclose(v[2], -0.3)
     assert True
 
 if __name__ == "__main__":
+    # testing vectorn subtraction
+    test_3d_vector_subtraction()
+    print("test_vector_subtraction test passed!")
+    
     # testing vector index access
     test_vector_index_access()
     print("test_vector_index_access test passed!")
