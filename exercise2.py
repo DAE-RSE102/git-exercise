@@ -14,8 +14,8 @@ class Point2D:
     def y(self) -> float:
         return self._coordinates[1]
         
-    def __iadd__(self, other: Vector) -> None:
-       self._coordinates += other
+    def __isub__(self, other: Vector) -> None:
+       self._coordinates -= other
        return self
 
 def test_point_construction() -> None:
@@ -41,5 +41,5 @@ def test_point_vector_subtraction() -> None:
 
 if __name__ == "__main__":
     # testing point vector addition
-    test_point_vector_addition()
-    print("test_point_vector_addition test passed!")
+    test_point_vector_subtraction()
+    print("test_point_vector_subtraction test passed!")
